@@ -1,12 +1,5 @@
-FROM node:6-alpine
+FROM node:6.13.1
 
-RUN apk update; apk add ncurses make bash
-
-ADD ./package.json /app/package.json
 WORKDIR /app
-
-RUN npm install
-
-ADD . /app
 
 EXPOSE 5000
