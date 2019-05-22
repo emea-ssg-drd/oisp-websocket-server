@@ -10,6 +10,5 @@ RUN npm install
 RUN apk del python g++
 
 ADD . /app
-RUN node_modules/grunt-cli/bin/grunt validate
 
 EXPOSE 5000
